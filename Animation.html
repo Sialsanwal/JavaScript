@@ -10,6 +10,7 @@
             height: 100px;
             width: 100px;
             background-color: orangered;
+            transition: 2s ease all;
         }
 
     </style>
@@ -26,7 +27,13 @@
 
 
     <script>
+        var btn=document.getElementById("btn");
+        var box=document.getElementById("box");
 
+            btn.onclick=function(){
+                box.style.transform="translateX(100%)";
+            }
     </script>
+</body>
 </body>
 </html>
