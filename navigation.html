@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        First
+        <ul id="linkbox">
+            <li class="link">link 1</li>
+            <li class="link">link 2</li>
+            <li class="link">link 3</li>
+        </ul>
+        Last
+    </div>
+
+
+
+
+    <script>
+
+    // var linkbox=document.getElementById("linkbox");
+    // document.write(linkbox.parentNode.firstChild.nodeValue); 
+         var link= document.getElementsByClassName("link")[1];
+         document.write(link.previousSibling.previousSibling.textContent);
+    </script>
+</body>
+</html>
